@@ -20,7 +20,7 @@ enum GameSymbol { Empty, Cross, Zero };
 
 const int SIZE = 3;
 
-int GameTable[SIZE][SIZE] = { Empty, Cross, Empty,
+GameSymbol GameTable[SIZE][SIZE] = { Empty, Cross, Empty,
                                    Empty, Empty, Zero,
                                    Zero, Empty, Cross, };
 
