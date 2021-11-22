@@ -72,6 +72,7 @@ int main()
     for (i = 1, j = 0; i < 2'147'483'647; i++){
         
             if (var % i == 0) j++;
+         if (j == 3) break;
      
     } 
     if (j > 2) cout << "Число является сложным" << endl;
