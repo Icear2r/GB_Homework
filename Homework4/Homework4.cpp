@@ -52,7 +52,7 @@ int main()
     cout << "Задание 2" << endl;
     cout << "const1 = " << const1 << endl;
     cout << "const2 = " << const2 << endl;
-    if ((const1 == 10 || const2 == 10) || (const1 + const2) == 10) cout << "true" << endl;
+    if ((const1 == 10 && const2 == 10) || (const1 + const2) == 10) cout << "true" << endl;
     else cout << "false" << endl;
 
     cout << "Задание 3" << endl;
@@ -69,13 +69,13 @@ int main()
     if (a < var || a > var) cout << "Число является дробью" << endl;
     if (a < 0) cout << "Число является отрицательным" << endl;
          
-    for (i = 1, j = 0; i < 2'147'483'647; i++){
+    for (i = 1, j = 0; i < var; i++){
         
             if (var % i == 0) j++;
-         if (j == 3) break;
+         if (j == 2) break;
      
     } 
-    if (j > 2) cout << "Число является сложным" << endl;
+    if (j > 1) cout << "Число является сложным" << endl;
     else cout << "Число является простым" << endl;
 
     cout << "Задание 5" << endl;
